@@ -1,0 +1,19 @@
+svg {
+  height:400px;
+  width: 400px;
+  margin: auto;
+  display: block;
+}
+
+path {
+  stroke-linecap: round;
+  stroke-width: 15;
+}
+
+path.grey {
+  stroke: lightgrey;
+}
+
+path.purple {
+  stroke-dasharray: 880;
+}
