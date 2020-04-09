@@ -12,16 +12,21 @@ export default class circle extends Component {
     return (
       <div className="circle_container">
         <div className="number">
-          <div className="one">10</div>
-          <div className="two">20</div>
-          <div className="three">30</div>
-          <div className="four">40</div>
-          <div className="five">50</div>
+          <div className="one">0</div>
+          <div className="two">50</div>
+          <div className="three">100</div>
+          <div className="four">150</div>
+          <div className="five">200</div>
         </div>
 
         <div className="total">
-          <span>Toplam Gelir</span>
+          <span>* Toplam Geliriniz</span>
           <h2>130.20 ₺</h2>
+
+          <p>
+            Geliriniz 200₺'nin üzerinde olmadığında şuanda ödeme talebi
+            oluşturulamaz.
+          </p>
         </div>
 
         <svg>

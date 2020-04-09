@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
 .circle_container {
   width: 389px;
   height: 350px;
-  border: solid 1px red;
   position: relative;
   margin: 40px;
 }
@@ -15,25 +23,24 @@
 .circle_container > .number > * {
   position: absolute;
   margin: -20px;
-  color: red;
-  font-weight: bold;
+  color: white;
+  font-weight: 500;
 }
-.circle_container > .number > .two {
+.circle_container > .number > .three {
   top: 0px;
-  left: 50%;
-  right: 50%;
+  left: 53%;
 }
 .circle_container > .number > .one {
   bottom: 20px;
-  left: 0px;
+  left: 20px;
 }
 .circle_container > .number > .five {
   bottom: 20px;
   right: 0px;
 }
-.circle_container > .number > .three {
+.circle_container > .number > .two {
   top: 120px;
-  left: 0px;
+  left: 20px;
 }
 .circle_container > .number > .four {
   top: 120px;
@@ -48,6 +55,19 @@
   justify-content: center;
   flex-direction: column;
   position: absolute;
+  color: #ffffff;
+  padding: 0px 30px;
+  text-align: center;
+}
+.total > h2{
+  margin: 5px;
+  font-size: 28px;
+  font-weight: 400;
+}
+.total > p{
+  width: 200px;
+  font-weight: 100;
+  color: #c1c1c1;
 }
 
 svg {
