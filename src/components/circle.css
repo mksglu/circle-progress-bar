@@ -16,4 +16,5 @@ path.grey {
 
 path.purple {
   stroke-dasharray: 880;
+  transition: all .8s ease-in-out;
 }
