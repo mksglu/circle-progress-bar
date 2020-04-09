@@ -17,6 +17,11 @@ class App extends React.Component {
     this.setState({calc: {...this.state.calc,currentPoint}})
   }
 
+  handleClickRange = (handleClickRange) => {
+    console.log(handleClickRange)
+    this.setState({calc: {...this.state.calc,circleRange:handleClickRange}})
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -25,7 +30,7 @@ class App extends React.Component {
           circleArc={this.state.calc.circleArc}
           currentPoint={this.state.calc.currentPoint}
         />
-        <Buttons handleClick={currentPoint=>this.handleClick(currentPoint)}/>
+        <Buttons handleClickRange={handleClickRange=>this.handleClickRange(handleClickRange)} handleClick={currentPoint=>this.handleClick(currentPoint)}/>
       </React.Fragment>
     )
   }

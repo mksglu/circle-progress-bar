@@ -12,11 +12,16 @@ export default class circle extends Component {
     return (
       <div className="circle_container">
         <div className="number">
+
           <div className="one">0</div>
-          <div className="two">50</div>
-          <div className="three">100</div>
-          <div className="four">150</div>
-          <div className="five">200</div>
+          {
+            // 600/2-(300/2)
+          }
+          <div className="two">{(this.props.circleRange/2)-((this.props.circleRange/2)/2)}</div>
+        <div className="three">{this.props.circleRange/2}</div>
+          <div className="four">{(this.props.circleRange/2)+((this.props.circleRange/2)/2)}</div>
+
+    <div className="five">{this.props.circleRange}</div>
         </div>
 
         <div className="total">
