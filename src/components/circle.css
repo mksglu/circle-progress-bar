@@ -1,22 +1,60 @@
-.chart {
+.circle_container {
   width: 389px;
   height: 350px;
+  border: solid 1px red;
   position: relative;
+  margin: 40px;
 }
-.chart svg {
-  width: 389px;
-  height: 350px;
-  position: absolute;
-}
-.circle {
-  position: absolute;
-}
-.chart .total {
-  position: absolute;
+
+.circle_container > .number {
   width: 100%;
-  text-align: center;
-  top: 160px;
+  height: 100%;
+  position: absolute;
+  border-radius: 100%;
 }
+.circle_container > .number > * {
+  position: absolute;
+  margin: -20px;
+  color: red;
+  font-weight: bold;
+}
+.circle_container > .number > .two {
+  top: 0px;
+  left: 50%;
+  right: 50%;
+}
+.circle_container > .number > .one {
+  bottom: 20px;
+  left: 0px;
+}
+.circle_container > .number > .five {
+  bottom: 20px;
+  right: 0px;
+}
+.circle_container > .number > .three {
+  top: 120px;
+  left: 0px;
+}
+.circle_container > .number > .four {
+  top: 120px;
+  right: 0px;
+}
+
+.circle_container > .total {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
 path {
   stroke-linecap: round;
   stroke-width: 15;

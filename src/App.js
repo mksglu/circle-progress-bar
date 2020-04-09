@@ -1,5 +1,4 @@
 import React from 'react'
-import './App.css'
 import CircleARC from './components/circle'
 import Buttons from "./components/buttons"
 class App extends React.Component {
