@@ -1,10 +1,22 @@
-svg {
-  height:400px;
-  width: 400px;
-  margin: auto;
-  display: block;
+.chart {
+  width: 389px;
+  height: 350px;
+  position: relative;
 }
-
+.chart svg {
+  width: 389px;
+  height: 350px;
+  position: absolute;
+}
+.circle {
+  position: absolute;
+}
+.chart .total {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 160px;
+}
 path {
   stroke-linecap: round;
   stroke-width: 15;
@@ -16,5 +28,5 @@ path.grey {
 
 path.purple {
   stroke-dasharray: 880;
-  transition: all .8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
