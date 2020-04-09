@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import "./circle.css";
+import React, { Component } from 'react'
+import './circle.css'
 
 export default class circle extends Component {
   render() {
@@ -7,8 +7,8 @@ export default class circle extends Component {
       strokeDashoffset:
         this.props.circleArc +
         (this.props.circleArc * this.props.currentPoint) /
-          this.props.circleRange,
-    };
+          this.props.circleRange
+    }
     return (
       <div className="circle_container">
         <div className="number">
@@ -21,7 +21,7 @@ export default class circle extends Component {
 
         <div className="total">
           <span>* Toplam Geliriniz</span>
-          <h2>130.20 ₺</h2>
+          <h2>{this.props.currentPoint} ₺</h2>
 
           <p>
             Geliriniz 200₺'nin üzerinde olmadığında şuanda ödeme talebi
@@ -53,6 +53,6 @@ export default class circle extends Component {
           />
         </svg>
       </div>
-    );
+    )
   }
 }
