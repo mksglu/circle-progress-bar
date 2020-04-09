@@ -28,7 +28,7 @@
 }
 .circle_container > .number > .three {
   top: 0px;
-  left: 53%;
+  left: 52%;
 }
 .circle_container > .number > .one {
   bottom: 20px;
@@ -39,12 +39,12 @@
   right: 0px;
 }
 .circle_container > .number > .two {
-  top: 120px;
-  left: 20px;
+  top: 145px;
+  left: 10px;
 }
 .circle_container > .number > .four {
-  top: 120px;
-  right: 0px;
+  top: 145px;
+  right: -10px;
 }
 
 .circle_container > .total {
